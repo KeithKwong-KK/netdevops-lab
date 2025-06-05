@@ -1,0 +1,10 @@
+- name: Set hostname on Cisco IOS
+  hosts: cisco
+  gather_facts: no
+  connection: network_cli
+
+  tasks:
+    - name: Configure hostname
+      ios_config:
+        lines:
+          - hostname R1-Auto

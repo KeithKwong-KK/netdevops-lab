@@ -7,4 +7,4 @@
     - name: Configure hostname
       ios_config:
         lines:
-          - hostname R1-Auto
+          - hostname R1-New
